@@ -1,20 +1,20 @@
-# Load the WPF-Assembly
+#Load the WPF-Assembly
 Add-Type -AssemblyName "System.Windows.Forms"
 
-# Create a GUI window:
+#Create a GUI window:
 $Form = New-Object System.Windows.Forms.Form
 $Form.Text = 'E-Mail Address Input'
 $Form.Size = New-Object System.Drawing.Size(600, 400)
 $Form.StartPosition = 'CenterScreen'  # The window will always appear centered on the screen
 
-# Create a label for the sender's email address:
+#Create a label for the sender's email address:
 $LabelFrom = New-Object System.Windows.Forms.Label
 $LabelFrom.Text = 'Sender E-Mail Address:'
 $LabelFrom.Location = New-Object System.Drawing.Point(10, 30)
 $LabelFrom.Size = New-Object System.Drawing.Size(350, 30)
 $LabelFrom.Font = New-Object System.Drawing.Font("Arial", 10)
 
-# Create a text box for the sender's email address:
+#Create a text box for the sender's email address:
 $TextBoxFrom = New-Object System.Windows.Forms.TextBox
 $TextBoxFrom.Location = New-Object System.Drawing.Point(10, 60)
 $TextBoxFrom.Size = New-Object System.Drawing.Size(350, 30)
